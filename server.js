@@ -9,44 +9,116 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: true}))
 
 app.get('*', (req, res) => {
+
   res.send('This is tutorial App on creating your first USSD app in 5 minutes or less by Ajala Abdulsamii <kgasta@gmail.com>')
+
 })
 
 app.post('*', (req, res) => {
+
   let {sessionId, serviceCode, phoneNumber, text} = req.body
+
   if (text == '') {
     // This is the first request. Note how we start the response with CON
-    let response = `CON What would you want to check
-    1. My Account
-    2. My phone number`
+    let response = `CON Please select the region
+
+    1. Central
+    2. Western
+    3. Eastern
+    4. Northern
+    5. Southern`
+
     res.send(response)
-  } else if (text == '1') {
+
+  } 
+
+  else if (text == '1') {
     // Business logic for first level response
-    let response = `CON Choose account information you want to view
-    1. Account number
-    2. Account balance`
+    let response = `CON Choose a hospital you want to view
+
+    1. Mulago hospital
+    2. Mengo hospital`
+
     res.send(response)
-  } else if (text == '2') {
+
+  } 
+
+  else if (text == '2') {
     // Business logic for first level response
-    let response = `END Your phone number is ${phoneNumber}`
+    let response = `CON Choose a hospital you want to view
+
+    1. Hoima regional referral hospital
+    2. Mabarara regional referral hospital`
+
     res.send(response)
-  } else if (text == '1*1') {
+
+  } 
+
+  else if (text == '3') {
+    // Business logic for first level response
+    let response = `CON Choose a hospital you want to view
+
+    1. Jinja hospital
+    2. Mbale hospital`
+
+    res.send(response)
+
+  } 
+
+  else if (text == '4') {
+    // Business logic for first level response
+    let response = `CON Choose a hospital you want to view
+
+    1. St. Marys Lacor hospital
+    2. St. Joseph's hospital Kitgum`
+
+    res.send(response)
+
+  } 
+
+   else if (text == '5') {
+    // Business logic for first level response
+    let response = `CON Choose a hospital you want to view
+
+    1. Masaka hospital
+    2. Mulago Masaka hospital`
+
+    res.send(response)
+
+  } 
+
+  else if (text == '1*1') {
     // Business logic for first level response
     let accountNumber = 'ACC1001'
+
     // This is a terminal request. Note how we start the response with END
     let response = `END Your account number is ${accountNumber}`
+
     res.send(response)
-  } else if (text == '1*2') {
+
+  } 
+
+  else if (text == '1*2') {
     // This is a second level response where the user selected 1 in the first instance
     let balance = 'NGN 10,000'
+
     // This is a terminal request. Note how we start the response with END
     let response = `END Your balance is ${balance}`
+
     res.send(response)
-  } else {
+
+  } 
+
+  else {
+
     res.status(400).send('Bad request!')
+
   }
+
 })
 
 app.listen(port, () => {
+
   console.log(`Server running on port ${port}`)
+
 })
