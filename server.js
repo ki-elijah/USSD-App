@@ -19,32 +19,34 @@ app.post('*', (req, res) => {
   let {sessionId, serviceCode, phoneNumber, text} = req.body
 
   if (text == '') {
-    // This is the first request. Note how we start the response with CON
+    // This is the first request. letting the user pick a region where the hospital they want is located
     let response = `CON Please select the region
 
     1. Central
     2. Western
     3. Eastern
     4. Northern
-    5. Southern`
+    5. Southern
+    0. Cancel`
 
     res.send(response)
 
   } 
 
   else if (text == '1') {
-    // Business logic for first level response
+    // Business logic for central region response
     let response = `CON Choose a hospital you want to view
 
-    1. Mulago hospital
-    2. Mengo hospital`
+    1. Public
+    2. Private
+    0. Cancel`
 
     res.send(response)
 
   } 
 
   else if (text == '2') {
-    // Business logic for first level response
+    // Business logic for Western region response
     let response = `CON Choose a hospital you want to view
 
     1. Hoima regional referral hospital
@@ -55,7 +57,7 @@ app.post('*', (req, res) => {
   } 
 
   else if (text == '3') {
-    // Business logic for first level response
+    // Business logic for eastern region response
     let response = `CON Choose a hospital you want to view
 
     1. Jinja hospital
@@ -66,7 +68,7 @@ app.post('*', (req, res) => {
   } 
 
   else if (text == '4') {
-    // Business logic for first level response
+    // Business logic for northern region response
     let response = `CON Choose a hospital you want to view
 
     1. St. Marys Lacor hospital
@@ -77,7 +79,7 @@ app.post('*', (req, res) => {
   } 
 
    else if (text == '5') {
-    // Business logic for first level response
+    // Business logic for Southern region response
     let response = `CON Choose a hospital you want to view
 
     1. Masaka hospital
@@ -86,6 +88,14 @@ app.post('*', (req, res) => {
     res.send(response)
 
   } 
+
+  else if (text == '0') {
+    // Business logic for Southern region response
+    let response = `END Exiting`
+
+    res.send(response)
+
+  }
 
   else if (text == '1*1') {
     // Business logic for first level response
