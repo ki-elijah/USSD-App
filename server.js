@@ -20,7 +20,19 @@ app.post('*', (req, res) => {
 
   if (text == '') {
     // This is the first request. letting the user pick a region where the hospital they want is located
-    let response = `CON Please select the region
+    let response = `CON Please select the type of hospital
+
+    1. Public
+    2. Private
+    0. Cancel`
+
+    res.send(response)
+
+  } 
+
+  else if (text == '1') {
+    // Business logic for public response
+    let response = `CON Choose a hospital you want to view
 
     1. Central
     2. Western
@@ -33,64 +45,23 @@ app.post('*', (req, res) => {
 
   } 
 
-  else if (text == '1') {
-    // Business logic for central region response
+  else if (text == '2') {
+    // Business logic for private response
     let response = `CON Choose a hospital you want to view
 
-    1. Public
-    2. Private
+    1. Central
+    2. Western
+    3. Eastern
+    4. Northern
+    5. Southern
     0. Cancel`
 
     res.send(response)
 
   } 
 
-  else if (text == '2') {
-    // Business logic for Western region response
-    let response = `CON Choose a hospital you want to view
-
-    1. Hoima regional referral hospital
-    2. Mabarara regional referral hospital`
-
-    res.send(response)
-
-  } 
-
-  else if (text == '3') {
-    // Business logic for eastern region response
-    let response = `CON Choose a hospital you want to view
-
-    1. Jinja hospital
-    2. Mbale hospital`
-
-    res.send(response)
-
-  } 
-
-  else if (text == '4') {
-    // Business logic for northern region response
-    let response = `CON Choose a hospital you want to view
-
-    1. St. Marys Lacor hospital
-    2. St. Joseph's hospital Kitgum`
-
-    res.send(response)
-
-  } 
-
-   else if (text == '5') {
-    // Business logic for Southern region response
-    let response = `CON Choose a hospital you want to view
-
-    1. Masaka hospital
-    2. Mulago Masaka hospital`
-
-    res.send(response)
-
-  } 
-
   else if (text == '0') {
-    // Business logic for Southern region response
+    // Business logic for cancel response
     let response = `END Exiting`
 
     res.send(response)
@@ -98,22 +69,63 @@ app.post('*', (req, res) => {
   }
 
   else if (text == '1*1') {
-    // Business logic for first level response
-    let accountNumber = 'ACC1001'
+    // Business logic for public central region response
+    let response = `CON Choose a hospital you want to view
 
-    // This is a terminal request. Note how we start the response with END
-    let response = `END Your account number is ${accountNumber}`
+    1. Mulago hospital
+    2. Mengo hospital`
 
     res.send(response)
 
   } 
 
   else if (text == '1*2') {
-    // This is a second level response where the user selected 1 in the first instance
-    let balance = 'NGN 10,000'
+    // Business logic for public western region response
+    let response = `CON Choose a hospital you want to view
 
-    // This is a terminal request. Note how we start the response with END
-    let response = `END Your balance is ${balance}`
+    1. Mbarara regional referral hospital
+    2. Hoima regional referral hospital`
+
+    res.send(response)
+
+  } 
+
+   else if (text == '1*3') {
+    // Business logic for public eastern region response
+    let response = `CON Choose a hospital you want to view
+
+    1. Jinja hospital`
+
+    res.send(response)
+
+  } 
+
+  else if (text == '1*4') {
+    // Business logic for public northern region response
+    let response = `CON Choose a hospital you want to view
+
+    1. Apac hospital`
+
+    res.send(response)
+
+  } 
+
+  else if (text == '1*5') {
+    // Business logic for public southern region response
+    let response = `CON Choose a hospital you want to view
+
+    1. Masaka hospital`
+
+    res.send(response)
+
+  } 
+
+  else if (text == '2*1') {
+    // Business logic for private central region response
+    let response = `CON Choose a hospital you want to view
+
+    1. CoRSU hospital
+    2. Mildmay health center`
 
     res.send(response)
 
