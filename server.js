@@ -120,12 +120,72 @@ app.post('*', (req, res) => {
 
   } 
 
+  else if (text == '1*6') {
+    // Business logic for public exit response
+    let response = `CON END`
+
+    res.send(response)
+
+  } 
+
   else if (text == '2*1') {
     // Business logic for private central region response
     let response = `CON Choose a hospital you want to view
 
     1. CoRSU hospital
     2. Mildmay health center`
+
+    res.send(response)
+
+  } 
+
+  else if (text == '2*2') {
+    // Business logic for private western region response
+    let response = `CON Choose a hospital you want to view
+
+    1. CoRSU hospital
+    2. Mildmay health center`
+
+    res.send(response)
+
+  } 
+
+  else if (text == '2*3') {
+    // Business logic for private eastern region response
+    let response = `CON Choose a hospital you want to view
+
+    1. CoRSU hospital
+    2. Mildmay health center`
+
+    res.send(response)
+
+  } 
+
+  else if (text == '2*4') {
+    // Business logic for private northern region response
+    let response = `CON Choose a hospital you want to view
+
+    1. CoRSU hospital
+    2. Mildmay health center`
+
+    res.send(response)
+
+  } 
+
+  else if (text == '2*5') {
+    // Business logic for private southern region response
+    let response = `CON Choose a hospital you want to view
+
+    1. CoRSU hospital
+    2. Mildmay health center`
+
+    res.send(response)
+
+  } 
+
+  else if (text == '2*6') {
+    // Business logic for private exit response
+    let response = `END Exiting`
 
     res.send(response)
 
