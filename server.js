@@ -252,7 +252,7 @@ app.post('*', (req, res) => {
 
   else if (text == '1*2*1*1') {
     // Business logic for public mbarara rrf region response
-    let response = `CON Mbarara hospital location
+    let response = `END Mbarara hospital location
 
     1. Mbarara, Uganda`
 
@@ -262,7 +262,7 @@ app.post('*', (req, res) => {
 
   else if (text == '1*2*1*2') {
     // Business logic for public mbarara rrf region response
-    let response = `CON Mbarara hospital services
+    let response = `END Mbarara hospital services
 
     . HIV Clinic
     . Maternal and Child Health Unit
@@ -299,7 +299,7 @@ else if (text == '1*2*2') {
 
   else if (text == '1*2*1*1') {
     // Business logic for public Hoima rrf region response
-    let response = `CON Hoima regional referral hospital location
+    let response = `END Hoima regional referral hospital location
 
     1. Hoima, Uganda`
 
@@ -309,7 +309,7 @@ else if (text == '1*2*2') {
 
   else if (text == '1*2*1*2') {
     // Business logic for public hoima rrf region response
-    let response = `CON Hoima regional referral hospital services
+    let response = `END Hoima regional referral hospital services
 
     . Dental
     . Eye
