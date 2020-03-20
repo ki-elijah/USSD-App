@@ -309,7 +309,7 @@ else if (text == '1*2*2') {
     // Business logic for public Hoima rrf region response
     let response = `END Hoima regional referral hospital location
 
-    1. Hoima, Uganda`
+    . Main Stree, Hoima, Uganda`
 
     res.send(response)
 
