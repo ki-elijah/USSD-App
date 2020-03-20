@@ -66,6 +66,17 @@ app.post('*', (req, res) => {
 
   }
 
+  else if (text == '1*1') {
+    // Business logic for public western region response
+    let response = `CON Choose a hospital you want to view
+
+    1. Mulago hospital
+    2. Mengo hospital`
+
+    res.send(response)
+
+  } 
+
    else if (text == '1*1*2') {
     // Business logic for public Mengo hospital response
     let response = `CON Mengo hospital services
@@ -78,7 +89,7 @@ app.post('*', (req, res) => {
 
   } 
 
-  else if (text == '1*1*1*1') {
+  else if (text == '1*1*2*1') {
     // Business logic for Mengo hospital location response
     let response = `END Mulago hospital Location
 
@@ -88,7 +99,7 @@ app.post('*', (req, res) => {
 
   } 
 
-  else if (text == '1*1*1*2') {
+  else if (text == '1*1*2*2') {
     // Business logic for public Mengo hospitalservices response
     let response = `END Mulago hospital services
 
@@ -104,7 +115,7 @@ app.post('*', (req, res) => {
 
   } 
 
-   else if (text == '1*1*1*0') {
+   else if (text == '1*1*2*0') {
     // Business logic for Mengo mulago hospital cancel response
     let response = `END Exiting`
 
