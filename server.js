@@ -101,7 +101,7 @@ app.post('*', (req, res) => {
 
    else if (text == '1*1*2') {
     // Business logic for public Mengo hospital response
-    let response = `CON Mengo hospital services
+    let response = `CON Mengo hospital
 
     1. Location
     2. services
@@ -173,7 +173,7 @@ app.post('*', (req, res) => {
 
   else if (text == '1*1*1') {
     // Business logic for public mulago hospital response
-    let response = `CON Mulago hospital services
+    let response = `CON Mulago hospital
 
     1. Location
     2. services
@@ -197,13 +197,13 @@ app.post('*', (req, res) => {
     // Business logic for public mulago hospitalservices response
     let response = `END Mulago hospital services
 
-    1. sychiatry
-    2. Ear
-    3. Nose
-    4. Throat (ENT)
-    5. Radiology
-    6. Pathology
-    7. Ophthalmology`
+    . sychiatry
+    . Ear
+    . Nose
+    . Throat (ENT)
+    . Radiology
+    . Pathology
+    . Ophthalmology`
 
     res.send(response)
 
@@ -217,29 +217,76 @@ app.post('*', (req, res) => {
 
   } 
 
+
+  //public
+  //western
+  //1/2
+
+
+
   else if (text == '1*2') {
     // Business logic for public western region response
     let response = `CON Choose a hospital you want to view
 
     1. Mbarara regional referral hospital
-    2. Hoima regional referral hospital`
+    2. Hoima regional referral hospital
+    0. Cancel`
 
     res.send(response)
 
   } 
 
-   else if (text == '1*3') {
-    // Business logic for public eastern region response
-    let response = `CON Choose a hospital you want to view
+   else if (text == '1*2*1') {
+    // Business logic for public mbarara rrf region response
+    let response = `CON Mbarara hospital
 
-    1. Jinja hospital`
+    1. Location
+    2. services
+    0. Cancel`
 
     res.send(response)
 
   } 
 
-  else if (text == '1*4') {
-    // Business logic for public northern region response
+  else if (text == '1*2*1*1') {
+    // Business logic for public mbarara rrf region response
+    let response = `CON Mbarara hospital location
+
+    1. Mbarara, Uganda`
+
+    res.send(response)
+
+  } 
+
+  else if (text == '1*2*1*2') {
+    // Business logic for public mbarara rrf region response
+    let response = `CON Mbarara hospital services
+
+    . HIV Clinic
+    . Maternal and Child Health Unit
+    . General OPD
+    . Eye clinic
+    . Psychiatry Wing
+    . Physiotherapy unit`
+
+    res.send(response)
+
+  }
+
+  else if (text == '1*2*1*0') {
+    // Business logic for public mbarara rrf region response
+    let response = `END Exiting`
+
+    res.send(response)
+
+  } 
+
+
+
+  
+
+  else if (text == '1*2*2') {
+    // Business logic for public Hoima rrf region response
     let response = `CON Choose a hospital you want to view
 
     1. Apac hospital`
@@ -248,13 +295,18 @@ app.post('*', (req, res) => {
 
   } 
 
-  else if (text == '1*6') {
+  else if (text == '1*2*0') {
     // Business logic for public exit response
     let response = `CON END`
 
     res.send(response)
 
   } 
+
+
+
+
+
 
   else if (text == '2*1') {
     // Business logic for private central region response
