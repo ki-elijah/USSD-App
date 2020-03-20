@@ -142,13 +142,13 @@ app.post('*', (req, res) => {
 // Business logic for public Mengo hospital specialised services response
     let response = `END Mengo hospital specialised services
 
-    1. Eye clinic
-    2. Dental clinic
-    3. Counseling and homecare
-    4. Orthopedics
-    5. Obstetrics  and gynaecology
-    6. Physiotherapy
-    7. Mental health`
+    . Eye clinic
+    . Dental clinic
+    . Counseling and homecare
+    . Orthopedics
+    . Obstetrics  and gynaecology
+    . Physiotherapy
+    . Mental health`
 
     res.send(response)
 
