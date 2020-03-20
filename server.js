@@ -309,14 +309,18 @@ else if (text == '1*2*2') {
 
   else if (text == '1*2*1*2') {
     // Business logic for public hoima rrf region response
-    let response = `CON Mbarara regional referral hospital services
+    let response = `CON Hoima regional referral hospital services
 
-    . HIV Clinic
-    . Maternal and Child Health Unit
-    . General OPD
-    . Eye clinic
-    . Psychiatry Wing
-    . Physiotherapy unit`
+    . Dental
+    . Eye
+    . Gynaecology
+    . General medicine
+    . Paediatrics
+    . ENT services
+    . ART
+    . Diabetic
+    . Hypertensive
+    . TB`
 
     res.send(response)
 
