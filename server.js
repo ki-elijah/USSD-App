@@ -122,26 +122,25 @@ app.post('*', (req, res) => {
   } 
 
   else if (text == '1*1*2*2') {
-    // Business logic for public Mengo hospitalservices response
+    // Business logic for public Mengo hospital services response
     let response = `CON Mengo hospital services
-
+    .  Surgery
+    .  Pharmacy
+    .  Laboratory
+    .  Private out patient
+    .  Generaloutpatient
+    .  Nursing department.
+    .  Corporate Social responsibility
     1. Specialised
-    2. Medicine
-       Surgery
-       Pharmacy
-       Laboratory
-       Private out patient
-       Generaloutpatient
-       Nursing department
-       Corporate Social responsibility`
+    2. Medicine`
 
     res.send(response)
 
   } 
 
   else if (text == '1*1*2*2*1'){
-
-    let response = `END 
+// Business logic for public Mengo hospital specialised services response
+    let response = `END Mengo hospital specialised services
 
     1. Eye clinic
     2. Dental clinic
@@ -156,22 +155,14 @@ app.post('*', (req, res) => {
   }
 
   else if (text == '1*1*2*2*2'){
-
-    let response = `END 
+// Business logic for public Mengo hospital medicine services response
+    let response = `END Mengo hospital medicine services
 
     1. Wards`
 
     res.send(response)
 
   }
-
-   else if (text == '1*1*2*0'|| '1*1*2*3' || '1*1*2*4' || '1*1*2*5' || '1*1*2*6' || '1*1*2*8' || '1*1*2*9' ) {
-    // Business logic for Mengo mulago hospital cancel response
-    let response = `END Exiting`
-
-    res.send(response)
-
-  } 
 
 
   //public
