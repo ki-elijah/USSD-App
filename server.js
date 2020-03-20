@@ -138,6 +138,14 @@ app.post('*', (req, res) => {
 
   } 
 
+  else if (text == '1*1*2*0') {
+    // Business logic for public Mengo hospital services response
+    let response = `END Exiting`
+
+    res.send(response)
+
+  } 
+
   else if (text == '1*1*2*2*1'){
 // Business logic for public Mengo hospital specialised services response
     let response = `END Mengo hospital specialised services
