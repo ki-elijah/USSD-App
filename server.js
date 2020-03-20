@@ -127,19 +127,19 @@ app.post('*', (req, res) => {
 
     1. Specialised
     2. Medicine
-    3. Surgery
-    4. Pharmacy
-    5. Laboratory
-    6. Private out patient
-    7. Generaloutpatient
-    8. Nursing department
-    9. Corporate Social responsibility`
+       Surgery
+       Pharmacy
+       Laboratory
+       Private out patient
+       Generaloutpatient
+       Nursing department
+       Corporate Social responsibility`
 
     res.send(response)
 
   } 
 
-  else if (text == '1*1*2*1'){
+  else if (text == '1*1*2*2*1'){
 
     let response = `END 
 
@@ -155,7 +155,7 @@ app.post('*', (req, res) => {
 
   }
 
-  else if (text == '1*1*2*2'){
+  else if (text == '1*1*2*2*2'){
 
     let response = `END 
 
