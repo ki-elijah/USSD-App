@@ -350,7 +350,7 @@ else if (text == '1*2*2') {
 
 
 
-  else if (text == '1*2') {
+  else if (text == '1*3') {
     // Business logic for public eastern region response
     let response = `CON Choose a hospital you want to view
 
@@ -364,7 +364,7 @@ else if (text == '1*2*2') {
 
   //Mbarara rrfh
 
-   else if (text == '1*2*1') {
+   else if (text == '1*3*1') {
     // Business logic for public jinja rrf region response
     let response = `CON Jinja regional referral hospital
 
@@ -376,7 +376,7 @@ else if (text == '1*2*2') {
 
   } 
 
-  else if (text == '1*2*1*1') {
+  else if (text == '1*3*1*1') {
     // Business logic for public jinja rrf region response
     let response = `END Jinja regional referral hospital location
 
@@ -386,7 +386,7 @@ else if (text == '1*2*2') {
 
   } 
 
-  else if (text == '1*2*1*2') {
+  else if (text == '1*3*1*2') {
     // Business logic for public jinja rrf region response
     let response = `END Jinja regional referral hospital services
 
@@ -409,7 +409,7 @@ else if (text == '1*2*2') {
 
   }
 
-  else if (text == '1*2*1*0') {
+  else if (text == '1*3*1*0') {
     // Business logic for public jinja rrf region response
     let response = `END Exiting`
 
@@ -419,7 +419,7 @@ else if (text == '1*2*2') {
 
 //Iganga General Hospital
 
-else if (text == '1*2*2') {
+else if (text == '1*3*2') {
     // Business logic for public Moroto regional referral Hospital response
     let response = `CON Moroto regional referral hospital
 
@@ -431,7 +431,7 @@ else if (text == '1*2*2') {
 
   } 
 
-  else if (text == '1*2*2*1') {
+  else if (text == '1*3*2*1') {
     // Business logic for public Moroto regional referral Hospital response
     let response = `END Moroto regional referral hospital location
 
@@ -442,7 +442,7 @@ else if (text == '1*2*2') {
 
   } 
 
-  else if (text == '1*2*2*2') {
+  else if (text == '1*3*2*2') {
     // Business logic for public Moroto regional referral hospital response
     let response = `END Moroto regional referral hospital services
 
@@ -459,7 +459,7 @@ else if (text == '1*2*2') {
 
   }
 
-  else if (text == '1*2*2*0') {
+  else if (text == '1*3*2*0') {
     // Business logic for public Moroto regional referral hospital response
     let response = `END Exiting`
 
