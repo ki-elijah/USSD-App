@@ -362,7 +362,7 @@ else if (text == '1*2*2') {
 
   } 
 
-  //Mbarara rrfh
+  //Jinja rrfh
 
    else if (text == '1*3*1') {
     // Business logic for public jinja rrf region response
@@ -417,7 +417,7 @@ else if (text == '1*2*2') {
 
   } 
 
-//Iganga General Hospital
+//Moroto rrh
 
 else if (text == '1*3*2') {
     // Business logic for public Moroto regional referral Hospital response
@@ -469,8 +469,121 @@ else if (text == '1*3*2') {
 
 
 
+  //public
+  //northern
+  //1/4
 
 
+
+  else if (text == '1*4') {
+    // Business logic for public northern region response
+    let response = `CON Choose a hospital you want to view
+
+    1. Arua regional referral hospital
+    2. Gulu regional referral hospital
+    0. Cancel`
+
+    res.send(response)
+
+  } 
+
+  //Jinja rrfh
+
+   else if (text == '1*4*1') {
+    // Business logic for public Arua rrf region response
+    let response = `CON Arua regional referral hospital
+
+    1. Location
+    2. services
+    0. Cancel`
+
+    res.send(response)
+
+  } 
+
+  else if (text == '1*4*1*1') {
+    // Business logic for public Arua rrf region response
+    let response = `END Arua regional referral hospital location
+
+    . City of Arua
+    . West Nile sub-region`
+
+    res.send(response)
+
+  } 
+
+  else if (text == '1*4*1*2') {
+    // Business logic for public Arua rrf region response
+    let response = `END Arua regional referral hospital services
+
+    . Rehabilitative health care
+    . Tertiary training
+    . Continuing professional Development (CPD).`
+
+    res.send(response)
+
+  }
+
+  else if (text == '1*4*1*0') {
+    // Business logic for public Arua rrf region response
+    let response = `END Exiting`
+
+    res.send(response)
+
+  } 
+
+//Gulu rrh
+
+else if (text == '1*4*2') {
+    // Business logic for public Gulu regional referral Hospital response
+    let response = `CON Gulu regional referral hospital
+
+    1. Location
+    2. services
+    0. Cancel`
+
+    res.send(response)
+
+  } 
+
+  else if (text == '1*4*2*1') {
+    // Business logic for public Gulu regional referral Hospital response
+    let response = `END Gulu regional referral hospital location
+
+    . Northern Ugandan
+    . City of Gulu`
+
+    res.send(response)
+
+  } 
+
+  else if (text == '1*4*2*2') {
+    // Business logic for public Gulu regional referral hospital response
+    let response = `END Gulu regional referral hospital services
+
+    . Obstetrics/Gynaecology
+    . Internal medicine
+    . Paediatrics
+    . Ophthalmology
+    . Surgery/Orthopaedics
+    . Mother and Child Clinics
+    . Community Health
+    . ENT
+    . Palliative Care
+    . Mental Health
+    . Physiotherapy`
+
+    res.send(response)
+
+  }
+
+  else if (text == '1*4*2*0') {
+    // Business logic for public Gulu regional referral hospital response
+    let response = `END Exiting`
+
+    res.send(response)
+
+  }
 
   else {
 
