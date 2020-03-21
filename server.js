@@ -344,6 +344,131 @@ else if (text == '1*2*2') {
 
 
 
+  //public
+  //eastern
+  //1/3
+
+
+
+  else if (text == '1*2') {
+    // Business logic for public eastern region response
+    let response = `CON Choose a hospital you want to view
+
+    1. Jinja regional referral hospital
+    2. Moroto regional referral hospital
+    0. Cancel`
+
+    res.send(response)
+
+  } 
+
+  //Mbarara rrfh
+
+   else if (text == '1*2*1') {
+    // Business logic for public jinja rrf region response
+    let response = `CON Jinja regional referral hospital
+
+    1. Location
+    2. services
+    0. Cancel`
+
+    res.send(response)
+
+  } 
+
+  else if (text == '1*2*1*1') {
+    // Business logic for public jinja rrf region response
+    let response = `END Jinja regional referral hospital location
+
+    . Center of Jinja, Uganda`
+
+    res.send(response)
+
+  } 
+
+  else if (text == '1*2*1*2') {
+    // Business logic for public jinja rrf region response
+    let response = `END Jinja regional referral hospital services
+
+    . Emergency / Trauma Medicine
+    . General Medicine
+    . Intensive Care
+    . Obstetrics & Gynaecology
+    . General Surgery
+    . HIV/AIDs
+    . Infectious Diseases
+    . Acute – Internal Medicine
+    . Paediatrics
+    . Public Health
+    . Dental
+    . Opticians
+    . Orthopaedic Surgery
+    . Psychiatry`
+
+    res.send(response)
+
+  }
+
+  else if (text == '1*2*1*0') {
+    // Business logic for public jinja rrf region response
+    let response = `END Exiting`
+
+    res.send(response)
+
+  } 
+
+//Iganga General Hospital
+
+else if (text == '1*2*2') {
+    // Business logic for public Moroto regional referral Hospital response
+    let response = `CON Moroto regional referral hospital
+
+    1. Location
+    2. services
+    0. Cancel`
+
+    res.send(response)
+
+  } 
+
+  else if (text == '1*2*2*1') {
+    // Business logic for public Moroto regional referral Hospital response
+    let response = `END Moroto regional referral hospital location
+
+    . Moroto, Uganda
+    . Norrtheastern Uganda`
+
+    res.send(response)
+
+  } 
+
+  else if (text == '1*2*2*2') {
+    // Business logic for public Moroto regional referral hospital response
+    let response = `END Moroto regional referral hospital services
+
+    . surgical ward
+    . Medical ward
+    . Maternity ward
+    . Paediatric ward
+    . Operating Theatre
+    . Private wing
+    . Pathology wing
+    . Outpatient department`
+
+    res.send(response)
+
+  }
+
+  else if (text == '1*2*2*0') {
+    // Business logic for public Moroto regional referral hospital response
+    let response = `END Exiting`
+
+    res.send(response)
+
+  }
+
+
+
 
 
 
