@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({extended: true}))
 
 app.get('*', (req, res) => {
 
-  res.send('This is tutorial App on creating your first USSD app in 5 minutes or less by Ajala Abdulsamii <kgasta@gmail.com>')
+  res.send('This is ussd app for hospital information system')
 
 })
 
@@ -584,6 +584,447 @@ else if (text == '1*4*2') {
     res.send(response)
 
   }
+
+
+
+   //private
+  //central
+  //2/1
+
+  else if (text == '2*1') {
+    // Business logic for private central region response
+    let response = `CON Choose a hospital you want to view
+
+    1. Kampala hospital
+    3. Nakasero hospital`
+
+    res.send(response)
+
+  } 
+
+
+  //private
+  //central
+  //1/1/2
+  //Kampala hospital
+
+   else if (text == '2*1*1') {
+    // Business logic for private Kampala hospital response
+    let response = `CON Kampala hospital
+
+    1. Location
+    2. services
+    0. Cancel`
+
+    res.send(response)
+
+  } 
+
+  else if (text == '2*1*1*1') {
+    // Business logic for private Kampala hospital location response
+    let response = `END Kampala hospital
+
+    . Kampala, Uganda`
+
+    res.send(response)
+
+  } 
+
+  else if (text == '2*1*1*2') {
+    // Business logic for private Kampala hospital services response
+    let response = `CON Kampala hospital services
+
+    . Anaesthesiology
+    . Haematology
+    . Ophthalmology
+    . Radiology and Imaging
+    . Paediatrics
+    . Surgery: General
+    . Neural
+    . Plastic`
+
+    res.send(response)
+
+  } 
+
+  else if (text == '2*1*1*0') {
+    // Business logic for private Kampala hospital services response
+    let response = `END Exiting`
+
+    res.send(response)
+
+  } 
+
+
+  //public
+  //central
+  //2/2/2
+  //Nakasero hospital
+
+
+  else if (text == '2*1*2') {
+    // Business logic for private Nakasero hospital response
+    let response = `CON Nakasero hospital
+
+    1. Location
+    2. services
+    0. Cancel`
+
+    res.send(response)
+
+  } 
+
+  else if (text == '2*1*2*1') {
+    // Business logic for private Nakasero hospital location response
+    let response = `END Nakasero hospital Location
+
+    . Plot 14A Akii Bua Road
+    . Nakasero, P.O.Box 25261
+    . Kampala, Uganda`
+
+    res.send(response)
+
+  } 
+
+  else if (text == '2*1*2*2') {
+    // Business logic for private Nakasero hospital services response
+    let response = `END Nakasero hospital services
+
+    . Internal medicine
+    . Neurology
+    . Surgery
+    . Dermatology
+    . Ear, nose & throat
+    . Haematology
+    . Dental
+    . Radiology
+    . OBS % Gynae
+    . Nephrology
+    . Ophthalmology
+    . Orthopedics`
+
+    res.send(response)
+
+  } 
+
+   else if (text == '2*1*2*0') {
+    // Business logic for private Nakasero hospital cancel response
+    let response = `END Exiting`
+
+    res.send(response)
+
+  } 
+
+
+
+  //private
+  //western
+  //2/2
+
+
+
+  else if (text == '2*2') {
+    // Business logic for private western region response
+    let response = `CON Choose a hospital you want to view
+
+    1. Whisper’s magical children’s hospital and maternity
+    2. Holy innocents children’s hospital
+    0. Cancel`
+
+    res.send(response)
+
+  } 
+
+  //Whispers rrfh
+
+   else if (text == '2*2*1') {
+    // Business logic for private Whisper’s magical children’s hospital response
+    let response = `CON Whisper’s magical children’s hospital
+
+    1. Location
+    2. services
+    0. Cancel`
+
+    res.send(response)
+
+  } 
+
+  else if (text == '2*2*1*1') {
+    // Business logic for private Whisper’s magical children’s hospital region response
+    let response = `END Whisper’s magical children’s hospital location
+
+    1. Mbarara, Uganda`
+
+    res.send(response)
+
+  } 
+
+  else if (text == '2*2*1*2') {
+    // Business logic for private Whisper’s magical children’s hospital region response
+    let response = `END Whisper’s magical children’s hospital services
+
+    . Consultations
+    . Emergency services
+    . Operating theatres
+    . Treatment for burns and scalds
+    . Sickle cell diagnosis
+    . Nutritional ward
+    . Blood transfusions
+    . Defibrillator`
+
+    res.send(response)
+
+  }
+
+  else if (text == '2*2*1*0') {
+    // Business logic for private Whisper’s magical children’s hospital region response
+    let response = `END Exiting`
+
+    res.send(response)
+
+  } 
+
+//St. Augustine community health center
+
+else if (text == '2*2*2') {
+    // Business logic for private St. Augustine community health center response
+    let response = `CON St. Augustine community health center
+
+    1. Location
+    2. services
+    0. Cancel`
+
+    res.send(response)
+
+  } 
+
+  else if (text == '2*2*2*1') {
+    // Business logic for private St. Augustine community health centerl response
+    let response = `END St. Augustine community health center location
+
+    . Ntare Road
+    . Opp. Ntare School
+    . Mbarara Municipality
+    . P.O. Box 1184
+    . Mbarara, Uganda`
+
+    res.send(response)
+
+  } 
+
+  else if (text == '2*2*2*2') {
+    // Business logic for private St. Augustine community health center response
+    let response = `END St. Augustine community health center services
+
+    . General medical care
+    . Post abortion care
+    . Family planing
+    . HIV/AIDS counseling & testing
+    . Antenatal & delivery
+    . Ultralsound scan`
+
+    res.send(response)
+
+  }
+
+  else if (text == '2*2*2*0') {
+    // Business logic for private St. Augustine community health center response
+    let response = `END Exiting`
+
+    res.send(response)
+
+  }
+
+
+
+
+
+  //private
+  //northern
+  //2/4
+
+
+
+  else if (text == '2*4') {
+    // Business logic for private northern region response
+    let response = `CON Choose a hospital you want to view
+
+    1. St. Mary’s Hospital Lacor
+    2. Gulu regional referral hospital
+    0. Cancel`
+
+    res.send(response)
+
+  } 
+
+  //St. Mary’s Hospital Lacor
+
+   else if (text == '2*4*1') {
+    // Business logic for private St. Mary’s Hospital Lacor response
+    let response = `CON St. Mary’s Hospital Lacor
+
+    1. Location
+    2. services
+    0. Cancel`
+
+    res.send(response)
+
+  } 
+
+  else if (text == '2*4*1*1') {
+    // Business logic for private St. Mary’s Hospital Lacor response
+    let response = `END St. Mary’s Hospital Lacor location
+
+    . P.O.Box 180
+    . Gulu, Uganda`
+
+    res.send(response)
+
+  } 
+
+  else if (text == '2*4*1*2') {
+    // Business logic for private St. Mary’s Hospital Lacor response
+    let response = `END St. Mary’s Hospital Lacor services
+
+    . Inpatients Departments
+    . Outpatients Clinics
+    . Private Services
+    . Paramedical Services`
+
+    res.send(response)
+
+  }
+
+  else if (text == '2*4*1*0') {
+    // Business logic for private St. Mary’s Hospital Lacor response
+    let response = `END Exiting`
+
+    res.send(response)
+
+  } 
+
+//Gulu independent hospital
+
+else if (text == '2*4*2') {
+    // Business logic for private Gulu independent hospital response
+    let response = `CON Gulu independent hospital
+
+    1. Location
+    2. services
+    0. Cancel`
+
+    res.send(response)
+
+  } 
+
+  else if (text == '2*4*2*1') {
+    // Business logic for private Gulu independent hospital response
+    let response = `END Gulu independent hospital location
+
+    . Northern Ugandan
+    . Gulu, Uganda`
+
+    res.send(response)
+
+  } 
+
+  else if (text == '2*4*2*2') {
+    // Business logic for private Gulu independent hospital response
+    let response = `END Gulu independent hospital services
+
+    . Laundry & dry cleaning
+    . Cosmetic surgery
+    . IVF & fertility clinic
+    . Laparoscopy & endoscopy
+    . Arthroscopy & Orthopaedic
+    . DNA paternity test
+    . Online payment
+    . Online bookings
+    . 24 hour service`
+
+    res.send(response)
+
+  }
+
+  else if (text == '2*4*2*0') {
+    // Business logic for private Gulu independent hospital response
+    let response = `END Exiting`
+
+    res.send(response)
+
+  }
+
+
+
+  //private
+  //eastern
+  //1/3
+
+
+
+  else if (text == '2*3') {
+    // Business logic for private eastern region response
+    let response = `CON Choose a hospital you want to view
+
+    1. Nile international hospital
+    0. Cancel`
+
+    res.send(response)
+
+  } 
+
+  //Nile international hospital
+
+   else if (text == '2*3*1') {
+    // Business logic for private Nile international hospital response
+    let response = `CON Nile international hospital
+
+    1. Location
+    2. services
+    0. Cancel`
+
+    res.send(response)
+
+  } 
+
+  else if (text == '2*3*1*1') {
+    // Business logic for private Nile international hospital response
+    let response = `END Nile international hospital location
+
+    . Jinja town
+    . Jinja Uganda
+    . Plot 2-16 Walukuba Jinja-Uganda`
+
+    res.send(response)
+
+  } 
+
+  else if (text == '2*3*1*2') {
+    // Business logic for private Nile international hospital response
+    let response = `END Nile international hospital services
+
+    . Theater
+    . Eye clinic diagnistics
+    . Endoscopy
+    . CT scan
+    . Eye clinic theater
+    . Laboratory service
+    . Panoramic X-ray
+    . ICU
+    . Neonatal ICU
+    . Antenatal care`
+
+    res.send(response)
+
+  }
+
+  else if (text == '2*3*1*0') {
+    // Business logic for private Nile international hospital response
+    let response = `END Exiting`
+
+    res.send(response)
+
+  } 
 
   else {
 
