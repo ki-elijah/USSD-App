@@ -305,7 +305,7 @@ else if (text == '1*2*2') {
 
   } 
 
-  else if (text == '1*2*1*1') {
+  else if (text == '1*2*2*1') {
     // Business logic for public Hoima rrf region response
     let response = `END Hoima regional referral hospital location
 
@@ -315,7 +315,7 @@ else if (text == '1*2*2') {
 
   } 
 
-  else if (text == '1*2*1*2') {
+  else if (text == '1*2*2*2') {
     // Business logic for public hoima rrf region response
     let response = `END Hoima regional referral hospital services
 
@@ -334,7 +334,7 @@ else if (text == '1*2*2') {
 
   }
 
-  else if (text == '1*2*1*0') {
+  else if (text == '1*2*2*0') {
     // Business logic for public mbarara rrf region response
     let response = `END Exiting`
 
@@ -345,80 +345,7 @@ else if (text == '1*2*2') {
 
 
 
-  else if (text == '1*2*2') {
-    // Business logic for public Hoima rrf region response
-    let response = `CON Choose a hospital you want to view
 
-    1. Apac hospital`
-
-    res.send(response)
-
-  } 
-
-  else if (text == '1*2*0') {
-    // Business logic for public exit response
-    let response = `CON END`
-
-    res.send(response)
-
-  } 
-
-
-
-
-
-
-  else if (text == '2*1') {
-    // Business logic for private central region response
-    let response = `CON Choose a hospital you want to view
-
-    1. CoRSU hospital
-    2. Mildmay health center`
-
-    res.send(response)
-
-  } 
-
-  else if (text == '2*2') {
-    // Business logic for private western region response
-    let response = `CON Choose a hospital you want to view
-
-    1. CoRSU hospital
-    2. Mildmay health center`
-
-    res.send(response)
-
-  } 
-
-  else if (text == '2*3') {
-    // Business logic for private eastern region response
-    let response = `CON Choose a hospital you want to view
-
-    1. CoRSU hospital
-    2. Mildmay health center`
-
-    res.send(response)
-
-  } 
-
-  else if (text == '2*4') {
-    // Business logic for private northern region response
-    let response = `CON Choose a hospital you want to view
-
-    1. CoRSU hospital
-    2. Mildmay health center`
-
-    res.send(response)
-
-  } 
-
-  else if (text == '2*6') {
-    // Business logic for private exit response
-    let response = `END Exiting`
-
-    res.send(response)
-
-  } 
 
   else {
 
