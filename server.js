@@ -596,7 +596,7 @@ else if (text == '1*4*2') {
     let response = `CON Choose a hospital you want to view
 
     1. Kampala hospital
-    3. Nakasero hospital`
+    2. Nakasero hospital`
 
     res.send(response)
 
