@@ -436,7 +436,7 @@ else if (text == '1*3*2') {
     let response = `END Moroto regional referral hospital location
 
     . Moroto, Uganda
-    . Norrtheastern Uganda`
+    . Northeastern Uganda`
 
     res.send(response)
 

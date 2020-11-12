@@ -10,7 +10,7 @@
     "USSD",
     "NODE"
   ],
-  "author": "Your Name <email>",
+  "author": "Project",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.18.2",
